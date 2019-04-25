@@ -1,0 +1,38 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="goodmorning.goodmorning.controller.ContactPersons" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Page showHeader="true" title="Contact Persons" showFooter="true" showNavButton="false">
+        <content>
+            <Table id="persons" mode="SingleSelectMaster" selectionChange="onSelectionChange" items="{/results}" class="TableStyle">
+                <columns>
+                    <Column>
+                        <Label text="First Name" required="true" />
+                    </Column>
+                    <Column>
+                        <Label text="Last Name" required="true"/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Input value="{FIRSTNAME}" editable="false" class="InputStyle" maxLength="50"/>
+                            <Input value="{LASTNAME}" editable="false" class="InputStyle" maxLength="50"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+        <headerContent />
+        <footer>
+            <Bar>
+                <contentRight>
+                    <ToolbarSpacer width="" />
+                    <Button id="InsertButton" text="Insert Item" type="Emphasized" press="onInsert" />
+                    <Button id="EditButton" text="Edit Item" type="Emphasized" press="onEdit" />
+                    <Button id="SaveButton" text="Save Item" type="Emphasized" press="onSave" />
+                    <Button id="DeleteButton" text="Delete Item" type="Reject" press="onDelete" />
+                </contentRight>
+            </Bar>
+        </footer>
+        <subHeader />
+        <customHeader />
+    </Page>
+</mvc:View>

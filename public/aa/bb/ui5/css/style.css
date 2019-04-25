@@ -1,0 +1,54 @@
+/* Custom Styles  */
+#ui5Logo {
+    padding-left: 10px !important;
+}
+#myproLink {
+    color: #ffffff !important;
+}
+.welcomeText {
+	font-size: 1.0rem !important;
+	margin: 2rem !important;
+}
+.sapMITBHead {
+  white-space: normal !important;
+}
+.sapMITBFilter .sapMITBText {
+  padding: 0.05rem 0 0 !important;
+}
+.sapMLabel {
+    font-size: 0.675rem !important;
+}
+
+.sapMTextLineClamp {
+    font-size: 0.875rem !important;
+}
+
+.sapMObjStatusText {
+    font-size: 0.675rem !important;
+}
+
+.sapMObjectAttributeDiv {
+    font-size: 0.675rem !important;
+}
+
+.sapMObjLIntro  {
+    font-size: 0.675rem !important;
+}
+
+.sapMObjectAttributeDiv .sapMText, .sapMObjectAttributeDiv .sapMObjectAttributeTitle, .sapMObjectAttributeDiv .sapMObjectAttributeColon, .sapMObjectAttributeDiv .sapMObjectAttributeText {
+    font-size: .675rem !important;
+}
+
+.sapMListTbl .sapMText, .sapMListTbl .sapMLabel {
+    font-size: 0.75rem !important;
+}
+
+.sapMListTbl .sapMObjectIdentifierTitle .sapMLnk, .sapMListTbl .sapMObjectIdentifierTitle .sapMText {
+    font-size: 0.75rem !important;
+}
+
+.sapMText.sapMObjLTitle {
+    font-size: 0.75rem !important;
+    font-weight: bold !important;
+}
+

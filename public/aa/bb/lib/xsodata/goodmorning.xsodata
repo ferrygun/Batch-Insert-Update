@@ -1,0 +1,17 @@
+service namespace "GoodMorningServices" { 
+	entity "goodmorning"."public.aa.bb.hdb::data.ContactPersons" as "ContactPersons"
+	concurrencytoken ("ID", "FIRSTNAME", "LASTNAME"); 
+	
+	entity "goodmorning"."public.aa.bb.hdb::data.ContactPersons" as "AddEditPersons"
+    create events(before "public.aa.bb.lib.xsjs:AddEditPersons.xsjslib::create_before_exit");
+    
+    entity "goodmorning"."public.aa.bb.hdb::data.ContactPersons" as "DeletePersons"
+    create using "public.aa.bb.lib.xsjs:DeletePersons.xsjslib::delete_before_exit";
+  
+}
+settings {
+  support null;
+  content cache-control "no-store";
+  metadata cache-control "max-age=3600,must-revalidate";
+}
+ 

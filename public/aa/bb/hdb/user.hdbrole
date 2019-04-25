@@ -1,0 +1,6 @@
+role public.aa.bb.hdb::user
+{
+    schema public.aa.bb.hdb:goodmorning.hdbschema: SELECT, EXECUTE, CREATE ANY, INSERT, UPDATE, DELETE;
+   
+}
+

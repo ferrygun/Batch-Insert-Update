@@ -1,0 +1,3 @@
+schema="goodmorning";
+start_with= 10;  
+depends_on_table= "public.aa.bb.hdb::data.ContactPersons";

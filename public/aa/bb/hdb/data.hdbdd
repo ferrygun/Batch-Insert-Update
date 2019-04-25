@@ -1,0 +1,12 @@
+namespace public.aa.bb.hdb;
+
+@Schema: 'goodmorning'
+
+context "data" {
+	@Catalog.tableType : #COLUMN
+	Entity ContactPersons {
+		key ID : Integer not null; 
+		FIRSTNAME : String(50);
+		LASTNAME : String(50);
+	}
+};

@@ -1,0 +1,119 @@
+{
+  "_version": "1.8.0",
+  "sap.app": {
+    "id": "goodmorning.goodmorning",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "sourceTemplate": {
+      "id": "ui5template.basicSAPUI5ApplicationProject",
+      "version": "1.40.12"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_hcb",
+      "sap_belize"
+    ]
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "goodmorning.goodmorning.view.App",
+      "type": "XML"
+    },
+    "dependencies": {
+      "minUI5Version": "1.30.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "config": {
+      "D_conn": "https://szish1d.pfizer.com:4300/zearn/",
+      "Q_conn": "https://QQQQQ.pfizer.com/zearn/",
+      "P_conn": "https://PPPPP.pfizer.com/zearn/"
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "goodmorning.goodmorning.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ],
+      "js": [
+        {
+		   "uri": "lib/md5.js"
+		}
+	  ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "JS",
+        "async": true,
+        "viewPath": "goodmorning.goodmorning.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false,
+        "viewLevel": 0,
+        "bypassed": {
+          "target": []
+        }
+      },
+      "routes": [
+        {
+          "name": "home",
+          "pattern": "",
+          "titleTarget": "",
+          "greedy": false,
+          "target": [
+            "home"
+          ]
+        }
+      ],
+      "targets": {
+        "home": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewName": "ContactPersons",
+          "viewLevel": 1
+        }
+      }
+    }
+  },
+  "sap.platform.hcp": {
+    "uri": "webapp",
+    "_version": "1.1.0"
+  }
+}

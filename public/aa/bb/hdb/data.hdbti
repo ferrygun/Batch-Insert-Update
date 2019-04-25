@@ -1,0 +1,10 @@
+import = [
+  {
+    table  = "public.aa.bb.hdb::data.ContactPersons";
+    schema = "goodmorning";     
+    file = "public.aa.bb.data:person.csv";  
+    header = false;   
+      delimField = ",";  
+      delimEnclosing= "\"";
+  }
+];
